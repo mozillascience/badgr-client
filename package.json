@@ -4,8 +4,10 @@
   "description": "client for the badgr-server API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/*",
-    "test:unit": "mocha test/unit"
+    "eslint": "eslint --config .eslintrc.yaml .",
+    "lint": "npm run eslint",
+    "test": "npm run lint && mocha test/*",
+    "test:unit": "npm run lint && mocha test/unit"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "eslint": "^2.10.2",
+    "mocha": "^2.4.5",
+    "mofo-style": "^2.4.0"
   }
 }

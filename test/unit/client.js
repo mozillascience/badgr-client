@@ -1,6 +1,6 @@
 'use strict';
 
-var client = require('../../index')({ username: "jos", password: "jos"});
+var client = require('../../index')({ username: 'jos', password: 'jos'});
 var unInitialisedClient = require('../../index');
 var expect = require('chai').expect;
 
