@@ -4,7 +4,8 @@
   "description": "client for the badgr-server API",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha test/*",
+    "test:unit": "mocha test/unit"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,9 @@
   },
   "author": "jos <josmasflores@gmail.com>",
   "contributors": [],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
 }
