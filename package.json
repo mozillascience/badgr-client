@@ -1,0 +1,26 @@
+{
+  "name": "badgr-client",
+  "version": "0.0.1",
+  "description": "client for the badgr-server API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "soon"
+  },
+  "keywords": [
+    "badgr",
+    "badges",
+    "open badges",
+    "paperbadger",
+    "mozilla science lab"
+  ],
+  "engines": {
+    "node": ">=0.12"
+  },
+  "author": "jos <josmasflores@gmail.com>",
+  "contributors": [],
+  "license": "MIT"
+}
