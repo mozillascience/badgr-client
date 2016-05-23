@@ -31,7 +31,7 @@ module.exports = function initClient(endpoint, auth, callback) {
       }
     }
     if (body && body.token) {
-      remote = new Remote(endpoint, auth);
+      remote = new Remote(endpoint, body.token);
       client = new Client(remote);
       return callback(null, client);
     } else {
