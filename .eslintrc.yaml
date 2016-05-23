@@ -5,6 +5,7 @@
 #   - valid-jsdoc
 #   - newline-after-var
 #   - prefer-arrow-callback
+#   - no-new
 #  Modified rules:
 #   - arrowFunctions: false // instead of true
 #   - quotes: [2, "single"] // instead of "backtick"
@@ -34,7 +35,6 @@ rules: # http://eslint.org/docs/rules
   no-multi-spaces: [2]
   no-native-reassign: [2]
   no-new-wrappers: [2]
-  no-new: [2]
   no-redeclare: [2]
   no-return-assign: [2]
   no-self-compare: [2]
