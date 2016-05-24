@@ -16,4 +16,10 @@ describe('A library instance', function() {
   it('should return error for a call to the library with no api endpoint', function () {
     expect(function() { new Index(null, {}); }).to.throw(Error);
   });
+
+  it('should contain functions from the methods mixin', function () {
+    var library;
+    expect(function() { library = new Index(apiEndpoint, {}); }).not.to.throw(Error);
+    expect(library.getAllBadges).not.to.be.undefined;
+  });
 });
