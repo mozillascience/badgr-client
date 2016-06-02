@@ -1,11 +1,11 @@
 'use strict';
 
-var env = new habitat('badgr');
 var Index = require('../../index');
 var expect = require('chai').expect;
+var habitat = require('habitat');
+var env = new habitat('badgr');
 var apiEndpoint = env.get('apiEndpoint');
-// These auth credentials are only valid for local dev server
-var goodTestAuth = { username: env.get('username'), password: env.get('password') };
+var goodTestAuth = env.get('credentials');
 
 describe('A higher level client using badge methods', function() {
 

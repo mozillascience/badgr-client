@@ -14,7 +14,7 @@
     "url": "https://github.com/josmas/badgr-client.git"
   },
   "dependencies": {
-    "habitat": "^3.1.2",
+    "habitat": "^3.1.2"
   },
   "bugs": {
     "url": "https://github.com/josmas/badgr-client/issues"

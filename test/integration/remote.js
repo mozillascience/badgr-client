@@ -2,10 +2,11 @@
 
 var Index = require('../../index');
 var expect = require('chai').expect;
-var apiEndpoint = 'http://192.168.99.100:8000/'; // TODO (jos) read from environment || default
+var habitat = require('habitat');
+var env = new habitat('badgr');
+var apiEndpoint = env.get('apiEndpoint');
 var badAuth = { username: '', password: ''};
-// These auth credentials are only valid for local dev server
-var goodTestAuth = { username: '', password: ''}; // TODO (jos) read from .env
+var goodTestAuth = env.get('credentials');
 
 describe('A remote instance using low level _remote calls', function() {
 
