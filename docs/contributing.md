@@ -7,7 +7,7 @@
 
 ## Project Setup
 
-Refer to the [README](docs/README.md).
+Refer to the [README](../README.md).
 
 ## Code Style
 
