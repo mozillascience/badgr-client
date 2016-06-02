@@ -1,10 +1,11 @@
 'use strict';
 
+var env = new habitat('badgr');
 var Index = require('../../index');
 var expect = require('chai').expect;
-var apiEndpoint = 'http://192.168.99.100:8000/'; // TODO (jos) read from environment || default
+var apiEndpoint = env.get('apiEndpoint');
 // These auth credentials are only valid for local dev server
-var goodTestAuth = { username: '', password: ''}; // TODO (jos) read from .env
+var goodTestAuth = { username: env.get('username'), password: env.get('password') };
 
 describe('A higher level client using badge methods', function() {
 
