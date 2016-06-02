@@ -1,8 +1,8 @@
 'use strict';
 
-module.exports = (function (prefix) {
+module.exports = (function () {
   var Habitat = require('habitat');
   Habitat.load('.env');
   Habitat.load('default.env');
-  return new Habitat(prefix);
+  return new Habitat();
 })();
