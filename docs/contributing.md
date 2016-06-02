@@ -7,7 +7,7 @@
 
 ## Project Setup
 
-Refer to the [README](README.md).
+Refer to the [README](docs/README.md).
 
 ## Code Style
 
@@ -20,8 +20,8 @@ files for both tools are provided in the root directory of the project.
 See [Mozilla Foundation JavaScript Style Guide](https://www.npmjs.com/package/mofo-style)
 
 This project does not currently fully support the latest
-[mofo-style](https://www.npmjs.com/package/mofo-style) version beacuse it is not a front end ES6 project.
-At the moment it uses a modified version of .eslintrc.yaml, provided in the root directory, instead of using the file
+[mofo-style](https://www.npmjs.com/package/mofo-style) version because it is not a front end ES6 project.
+At the moment it uses a modified version of _.eslintrc.yaml_, provided in the root directory, instead of using the file
 inside _./node-modules/mofo-style/.eslintrc.yaml_.
 
 **TL;DR** Run `npm run lint` before pushing a commit. It will validate your JS.
