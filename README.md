@@ -37,6 +37,9 @@ Testing will automatically _lint_ and stop if code style does not pass.
 > for a local Badgr user in integration tests [badge_methods.js](https://github.com/josmas/badgr-client/blob/dev/test/integration/badge_methods.js)
 > and [remote.js](https://github.com/josmas/badgr-client/blob/dev/test/integration/remote.js). Variable is `goodTestAuth`.
 
+### Easy badgr-server install
+For an easy way to install [badgr-server](https://github.com/concentricsky/badgr-server), you can use this [Dockerfile](https://github.com/josmas/local-badgr-server).
+
 ## Code Style
 This project follows most of the guidelines in the [mofo-style](https://github.com/MozillaFoundation/mofo-style) package.
 Some of the rules have been modified because this is not a _front-end_ ES6 project.
