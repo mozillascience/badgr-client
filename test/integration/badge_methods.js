@@ -2,10 +2,9 @@
 
 var Index = require('../../index');
 var expect = require('chai').expect;
-var habitat = require('habitat');
-var env = new habitat('badgr');
-var apiEndpoint = env.get('apiEndpoint');
-var goodTestAuth = env.get('credentials');
+var env = require('../../src/environments');
+var apiEndpoint = env.get('badgrApiEndpoint');
+var goodTestAuth = env.get('badgrCredentials');
 
 describe('A higher level client using badge methods', function() {
 
