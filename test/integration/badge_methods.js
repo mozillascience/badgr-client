@@ -4,7 +4,7 @@ var Index = require('../../index');
 var expect = require('chai').expect;
 var env = require('../../src/environments');
 var apiEndpoint = env.get('badgrApiEndpoint');
-var goodTestAuth = env.get('badgrCredentials');
+var goodTestAuth = { username: env.get('badgrUser'), password: env.get('badgrPass')};
 
 describe('A higher level client using badge methods', function() {
 
