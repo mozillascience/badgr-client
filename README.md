@@ -33,9 +33,7 @@ _Unit_ tests can be run with `npm run test:unit`.
 
 Testing will automatically _lint_ and stop if code style does not pass.
 
-> Note that until [#1](https://github.com/josmas/badgr-client/issues/1) is solved, you will need to provide authentication
-> for a local Badgr user in integration tests [badge_methods.js](https://github.com/josmas/badgr-client/blob/dev/test/integration/badge_methods.js)
-> and [remote.js](https://github.com/josmas/badgr-client/blob/dev/test/integration/remote.js). Variable is `goodTestAuth`.
+Note that you will need to copy the _default.env_ file into an _.env_ file in order to provide authentication details for a Badgr user and server URL.
 
 ### Easy badgr-server install
 For an easy way to install [badgr-server](https://github.com/concentricsky/badgr-server), you can use this [Dockerfile](https://github.com/josmas/local-badgr-server).
