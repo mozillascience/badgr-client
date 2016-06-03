@@ -27,7 +27,8 @@
     "mozilla science lab"
   ],
   "engines": {
-    "node": ">=0.12"
+    "node": ">=4.4.5",
+    "npm": ">=2.15.5"
   },
   "author": "jos <josmasflores@gmail.com>",
   "contributors": [],
