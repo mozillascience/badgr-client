@@ -46,7 +46,7 @@ _Linting_ will be run automatically with some other tasks (such as testing), but
 
 ## Contributing
 
-Please see [docs/contributing.md](docs/contributing.md) for contribution guidelines.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 # Install & Usage
 
