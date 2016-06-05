@@ -2,6 +2,8 @@
 
 > Work In Progress: not much to see for now.
 
+[![Travis](https://img.shields.io/travis/josmas/badgr-client.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/josmas/badgr-client)
+
 A nodejs client for the [badgr-server](https://github.com/concentricsky/badgr-server) API.
 
 The main goal is to use this client in [PaperBadger](https://github.com/mozillascience/PaperBadger/), so the bulk of the
