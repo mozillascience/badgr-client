@@ -1,0 +1,25 @@
+{
+  "name": "badgr-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "habitat": {
+      "version": "3.1.2",
+      "from": "habitat@>=3.1.2 <4.0.0",
+      "resolved": "https://registry.npmjs.org/habitat/-/habitat-3.1.2.tgz",
+      "dependencies": {
+        "xtend": {
+          "version": "2.1.2",
+          "from": "xtend@>=2.1.1 <2.2.0",
+          "resolved": "https://registry.npmjs.org/xtend/-/xtend-2.1.2.tgz",
+          "dependencies": {
+            "object-keys": {
+              "version": "0.4.0",
+              "from": "object-keys@>=0.4.0 <0.5.0",
+              "resolved": "https://registry.npmjs.org/object-keys/-/object-keys-0.4.0.tgz"
+            }
+          }
+        }
+      }
+    }
+  }
+}
