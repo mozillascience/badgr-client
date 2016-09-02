@@ -1,6 +1,6 @@
 {
   "name": "badgr-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "client for the badgr-server API",
   "main": "index.js",
   "scripts": {
