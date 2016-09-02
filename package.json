@@ -11,28 +11,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/josmas/badgr-client.git"
+    "url": "https://github.com/mozillascience/badgr-client.git"
   },
   "dependencies": {
     "habitat": "^3.1.2"
   },
   "bugs": {
-    "url": "https://github.com/josmas/badgr-client/issues"
+    "url": "https://github.com/mozillascience/badgr-client/issues"
   },
   "keywords": [
     "badgr",
     "badges",
     "open badges",
     "paperbadger",
-    "mozilla science lab"
+    "mozilla science lab",
+    "science",
+    "node"
   ],
   "engines": {
     "node": ">=4.4.5",
     "npm": ">=2.15.5"
   },
-  "author": "jos <josmasflores@gmail.com>",
-  "contributors": [],
-  "license": "MIT",
+  "license": "MPL-2.0",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^2.10.2",

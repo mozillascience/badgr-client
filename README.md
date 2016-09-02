@@ -12,6 +12,8 @@ work will focus on the needs of that particular project. At some point, the libr
 ## What works for now
   - Authorisation through user name and password (only method supported by the Badgr API).
   - List all badges
+  - Issue badges to a recipient (email as Id)
+  - List all instances of a badge by issuer
 
 ## What needs to be done?
 The bulk of the work is stated in [#7](https://github.com/josmas/badgr-client/issues/7).
