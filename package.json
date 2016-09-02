@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "habitat": "^3.1.2",
-    "request": "^2.72.0"
+    "request": "2.74.0"
   },
   "bugs": {
     "url": "https://github.com/mozillascience/badgr-client/issues"
