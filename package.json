@@ -14,7 +14,8 @@
     "url": "https://github.com/mozillascience/badgr-client.git"
   },
   "dependencies": {
-    "habitat": "^3.1.2"
+    "habitat": "^3.1.2",
+    "request": "^2.72.0"
   },
   "bugs": {
     "url": "https://github.com/mozillascience/badgr-client/issues"
@@ -39,7 +40,6 @@
     "mime": "^1.3.4",
     "mocha": "^2.4.5",
     "mofo-style": "^2.4.0",
-    "request": "^2.72.0",
     "sinon": "^1.17.4"
   }
 }
