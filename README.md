@@ -2,7 +2,7 @@
 
 > Work In Progress: not much to see for now.
 
-[![Travis](https://img.shields.io/travis/josmas/badgr-client.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/josmas/badgr-client)
+[![Travis](https://img.shields.io/travis/mozillascience/badgr-client.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/mozillascience/badgr-client)
 
 A nodejs client for the [badgr-server](https://github.com/concentricsky/badgr-server) API.
 
@@ -16,7 +16,7 @@ work will focus on the needs of that particular project. At some point, the libr
   - List all instances of a badge by issuer
 
 ## What needs to be done?
-The bulk of the work is stated in [#7](https://github.com/josmas/badgr-client/issues/7).
+The bulk of the work is stated in [#7](https://github.com/mozillascience/badgr-client/issues/7).
 
 
 # Development
@@ -57,7 +57,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 > Note that there's no npm package yet, so you can npm link if you want to use it in a demo app
 
 The easiest way to see how to use the library is to look into the integration tests in
-[badge_methods.js](https://github.com/josmas/badgr-client/blob/dev/test/integration/badge_methods.js)
+[badge_methods.js](https://github.com/mozillascience/badgr-client/blob/dev/test/integration/badge_methods.js)
 
 ## Client setup & API calls
 
