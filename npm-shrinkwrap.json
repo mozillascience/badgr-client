@@ -1,6 +1,6 @@
 {
   "name": "badgr-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "habitat": {
       "version": "3.1.2",
