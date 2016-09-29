@@ -14,6 +14,7 @@ work will focus on the needs of that particular project. At some point, the libr
   - List all badges
   - Issue badges to a recipient (email as Id)
   - List all instances of a badge by issuer
+  - List all badges issued to a particular recipient (by ORCID)
 
 ## What needs to be done?
 The bulk of the work is stated in [#7](https://github.com/mozillascience/badgr-client/issues/7).
@@ -23,7 +24,11 @@ The bulk of the work is stated in [#7](https://github.com/mozillascience/badgr-c
 
 ## Fork and clone
 
-> Add instructions to forking and cloning - nothing special to do; just normal github flow.
+Fork a repo as per [github instructions](https://help.github.com/articles/fork-a-repo/) and then clone with
+ (make sure to swap _YOUR_USER_NAME_ with your real github username):
+
+`git clone git@github.com:YOUR_USER_NAME/badgr-client.git`
+
 
 ## Main branch - dev
 Note that the main branch is `dev` and not `master`. All work will eventually be merged into _master_, but _dev_ is the
