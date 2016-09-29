@@ -63,7 +63,7 @@ describe('A higher level client using issuing methods', function() {
     var opts = {
       path: 'v1/issuer/issuers',
       issuerSlug: 'mozilla-science',
-      recipient: '0000-0002-3881-294X'
+      recipient: '0000-0002-3881-294X@orcid.org'
     };
     client.getBadgeInstancesByRecipient(opts, function (err, data) {
       expect(err).to.be.null;
