@@ -56,4 +56,20 @@ describe('A higher level client using issuing methods', function() {
       done();
     });
   });
+
+  it('should get all instances of a badge, under the issuer, for a specific recipient', function (done) {
+    var client = new Index(apiEndpoint, goodTestAuth);
+
+    var opts = {
+      path: 'v1/issuer/issuers',
+      issuerSlug: 'mozilla-science',
+      recipient: '0000-0002-3881-294X'
+    };
+    client.getBadgeInstancesByRecipient(opts, function (err, data) {
+      expect(err).to.be.null;
+      expect(data).not.to.be.undefined; // Even if it is empty, it means that the endpoint is working
+      done();
+    });
+  });
+
 });
