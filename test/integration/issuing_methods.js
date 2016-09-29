@@ -44,4 +44,16 @@ describe('A higher level client using issuing methods', function() {
     });
   });
 
+  it('should error out when not enough information is passed for a badge instance query', function (done) {
+    var client = new Index(apiEndpoint, goodTestAuth);
+
+    var opts = {
+      issuerSlug: 'mozilla-science'
+    };
+    client.getBadgeInstances(opts, function (err, data) {
+      expect(err).not.to.be.null;
+      expect(data).to.be.undefined;
+      done();
+    });
+  });
 });
