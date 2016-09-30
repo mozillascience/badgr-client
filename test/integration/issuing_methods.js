@@ -35,7 +35,7 @@ describe('A higher level client using issuing methods', function() {
       issuerSlug: 'mozilla-science',
       badgeSlug: 'resources'
     };
-    client.getBadgeInstances(opts, function (err, data) {
+    client.getBadgeInstancesByBadge(opts, function (err, data) {
       expect(err).to.be.null;
       expect(data).not.to.be.undefined; // Even if it is empty, it means that the endpoint is working
       done();
@@ -48,7 +48,7 @@ describe('A higher level client using issuing methods', function() {
     var opts = {
       issuerSlug: 'mozilla-science'
     };
-    client.getBadgeInstances(opts, function (err, data) {
+    client.getBadgeInstancesByBadge(opts, function (err, data) {
       expect(err).not.to.be.null;
       expect(data).to.be.undefined;
       done();
@@ -76,7 +76,7 @@ describe('A higher level client using issuing methods', function() {
       issuerSlug: 'mozilla-science',
       evidence: 'http://dx.doi.org/10.1186/2047-217X-3-18'
     };
-    client.getBadgeInstancesByPaper(opts, function (err, data) {
+    client.getBadgeInstancesByEvidence(opts, function (err, data) {
       expect(err).to.be.null;
       expect(data).not.to.be.undefined; // Even if it is empty, it means that the endpoint is working
       done();
