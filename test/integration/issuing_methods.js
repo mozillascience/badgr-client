@@ -13,7 +13,6 @@ describe('A higher level client using issuing methods', function() {
     var client = new Index(apiEndpoint, goodTestAuth);
 
     var opts = {
-      path: 'v1/issuer/issuers',
       issuerSlug: 'mozilla-science',
       badgeSlug: 'software',
       recipient_identifier: 'b@d.gr',
@@ -33,7 +32,6 @@ describe('A higher level client using issuing methods', function() {
     var client = new Index(apiEndpoint, goodTestAuth);
 
     var opts = {
-      path: 'v1/issuer/issuers',
       issuerSlug: 'mozilla-science',
       badgeSlug: 'resources'
     };
@@ -61,7 +59,6 @@ describe('A higher level client using issuing methods', function() {
     var client = new Index(apiEndpoint, goodTestAuth);
 
     var opts = {
-      path: 'v1/issuer/issuers',
       issuerSlug: 'mozilla-science',
       recipient: '0000-0002-3881-294X@orcid.org'
     };
@@ -76,7 +73,6 @@ describe('A higher level client using issuing methods', function() {
     var client = new Index(apiEndpoint, goodTestAuth);
 
     var opts = {
-      path: 'v1/issuer/issuers',
       issuerSlug: 'mozilla-science',
       evidence: 'http://dx.doi.org/10.1186/2047-217X-3-18'
     };
