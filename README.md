@@ -15,6 +15,7 @@ work will focus on the needs of that particular project. At some point, the libr
   - Issue badges to a recipient (email as Id)
   - List all instances of a badge by issuer
   - List all badges issued to a particular recipient (by ORCID)
+  - List all badges issued for a particular paper (by evidence doi url)
 
 ## What needs to be done?
 The bulk of the work is stated in [#7](https://github.com/mozillascience/badgr-client/issues/7).
@@ -73,22 +74,25 @@ The main example in tests so far is:
     it('should return data when calling all badges', function (done) {
       var client = new Index(apiEndpoint, goodTestAuth);
 
-      var opts = {
-        path: 'v1/issuer/all-badges'
-      };
-
-      client.getAllBadges(opts, function (err, data) {
+      client.getAllBadges(function (err, data) {
         expect(err).to.be.null;
         expect(data).not.to.be.undefined;
         expect(data[0].created_at).not.to.be.undefined;
         done();
       });
-
     });
 
 ```
 
 where `apiEndpoint` is a valid url to a badgr-server instance, and `goodTestAuth` is in the form: `{ username: 'x@x.x', password: 'xxx'}`.
 
+### Concerns and things to watch out for
+Because this library is being created for [PaperBadger](https://github.com/mozillascience/PaperBadger/), some
+abstractions from that project are leaking into the library. For instance, the _evidence_ field is used to contain a
+paper _doi_ url, and the method is currently called _getBadgeInstancesByPaper_. This does not make sense in a generic
+badges context. Another examples is using references to DOI and ORCID within the tests. Those tests should not fail even
+if the data is not available, but it ties the library to the PaperBadger domain.
+
+The library should be more generic, so a bit of refactoring is planned (at some point!).
 
 Jos - May 2o16
