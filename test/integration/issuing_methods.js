@@ -98,4 +98,19 @@ describe('A higher level client using issuing methods', function() {
     });
   });
 
+  it('should return all badge instances for a badge, and for a particular evidence url', function (done) {
+    var client = new Index(apiEndpoint, goodTestAuth);
+
+    var opts = {
+      issuerSlug: 'mozilla-science',
+      badgeSlug: 'software',
+      evidence: 'http://dx.doi.org/10.1186/2047-217X-3-18'
+    };
+    client.getBadgeInstances(opts, function (err, data) {
+      expect(err).to.be.null;
+      expect(data).not.to.be.undefined; // Even if it is empty, it means that the endpoint is working
+      done();
+    });
+  });
+
 });
