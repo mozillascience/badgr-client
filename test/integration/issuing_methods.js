@@ -28,6 +28,19 @@ describe('A higher level client using issuing methods', function() {
     });
   });
 
+  it('should return all badge instances when no additional filters are passed', function (done) {
+    var client = new Index(apiEndpoint, goodTestAuth);
+
+    var opts = {
+      issuerSlug: 'mozilla-science'
+    };
+    client.getBadgeInstances(opts, function (err, data) {
+      expect(err).to.be.null;
+      expect(data).not.to.be.undefined;
+      done();
+    });
+  });
+
   it('should get all instances of a badge under the issuer passed in', function (done) {
     var client = new Index(apiEndpoint, goodTestAuth);
 
@@ -35,22 +48,9 @@ describe('A higher level client using issuing methods', function() {
       issuerSlug: 'mozilla-science',
       badgeSlug: 'resources'
     };
-    client.getBadgeInstancesByBadge(opts, function (err, data) {
+    client.getBadgeInstances(opts, function (err, data) {
       expect(err).to.be.null;
       expect(data).not.to.be.undefined; // Even if it is empty, it means that the endpoint is working
-      done();
-    });
-  });
-
-  it('should error out when not enough information is passed for a badge instance query', function (done) {
-    var client = new Index(apiEndpoint, goodTestAuth);
-
-    var opts = {
-      issuerSlug: 'mozilla-science'
-    };
-    client.getBadgeInstancesByBadge(opts, function (err, data) {
-      expect(err).not.to.be.null;
-      expect(data).to.be.undefined;
       done();
     });
   });
@@ -62,21 +62,21 @@ describe('A higher level client using issuing methods', function() {
       issuerSlug: 'mozilla-science',
       recipient: '0000-0002-3881-294X@orcid.org'
     };
-    client.getBadgeInstancesByRecipient(opts, function (err, data) {
+    client.getBadgeInstances(opts, function (err, data) {
       expect(err).to.be.null;
       expect(data).not.to.be.undefined; // Even if it is empty, it means that the endpoint is working
       done();
     });
   });
 
-  it('should get all badge instances for a particular paper (by paper doi)', function (done) {
+  it('should get all badge instances for a particular evidence url', function (done) {
     var client = new Index(apiEndpoint, goodTestAuth);
 
     var opts = {
       issuerSlug: 'mozilla-science',
       evidence: 'http://dx.doi.org/10.1186/2047-217X-3-18'
     };
-    client.getBadgeInstancesByEvidence(opts, function (err, data) {
+    client.getBadgeInstances(opts, function (err, data) {
       expect(err).to.be.null;
       expect(data).not.to.be.undefined; // Even if it is empty, it means that the endpoint is working
       done();
